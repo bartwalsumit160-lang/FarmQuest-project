@@ -17,6 +17,7 @@ import { CalendarSystem } from "./calendar-system" // Added CalendarSystem impor
 import { QuestsSystem } from "./quests-system" // Added QuestsSystem import
 import { LeaderboardSystem } from "./leaderboard-system" // Added LeaderboardSystem import
 import { SettingsSystem } from "./settings-system"
+import { getAsset } from '@/lib/getAsset';
 
 interface FarmDashboardProps {
   userProfile?: {
@@ -41,14 +42,14 @@ export function FarmDashboard({ userProfile }: FarmDashboardProps) {
 
   // Diverse avatars (no customization)
   const avatarChoices = [
-    { image: "/farmer-avatar.png" },
-    { image: "/placeholder-user.jpg" },
-    { image: "/placeholder.jpg" },
-    { image: "/placeholder-logo.png" },
-    { image: "/placeholder-logo.svg" },
-    { image: "/placeholder-user.jpg" },
-    { image: "/placeholder.jpg" },
-    { image: "/farmer-avatar.png" },
+    { image: getAsset("/farmer-avatar.png") },
+    { image: getAsset("/placeholder-user.jpg") },
+    { image: getAsset("/placeholder.jpg") },
+    { image: getAsset("/placeholder-logo.png") },
+    { image: getAsset("/placeholder-logo.svg") },
+    { image: getAsset("/placeholder-user.jpg") },
+    { image: getAsset("/placeholder.jpg") },
+    { image: getAsset("/farmer-avatar.png") },
   ]
   const [selectedAvatarIdx, setSelectedAvatarIdx] = useState(0)
 
@@ -303,7 +304,7 @@ export function FarmDashboard({ userProfile }: FarmDashboardProps) {
             {/* Logo and App Name at the left */}
             <div className="flex items-center gap-4">
               <img
-                src="/farmquest-logo.png"
+                src={getAsset("/farmquest-logo.png")}
                 alt="FarmQuest Logo"
                 className="w-10 h-10 object-contain"
               />
@@ -896,7 +897,7 @@ export function FarmDashboard({ userProfile }: FarmDashboardProps) {
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
           <div className="flex items-center gap-3 mb-2 md:mb-0">
             <img
-              src="/farmquest-logo.png"
+              src={getAsset("/farmquest-logo.png")}
               alt="FarmQuest Logo"
               className="w-8 h-8 object-contain"
             />

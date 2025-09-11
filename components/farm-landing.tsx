@@ -22,6 +22,7 @@ import {
 import { AuthModal } from "./auth-modal"
 import { AnimatedBackground } from "./animated-background"
 import Image from "next/image"
+import { getAsset } from '@/lib/getAsset';
 
 interface FarmLandingProps {
   onGetStarted: () => void
@@ -50,7 +51,7 @@ export function FarmLanding({ onGetStarted, onSignup, onLogin }: FarmLandingProp
       <header className="border-b bg-white/80 backdrop-blur-sm relative z-10">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Image src="/farmquest-logo.png" alt="FarmQuest Logo" width={32} height={32} className="h-8 w-8" />
+            <Image src={getAsset("/farmquest-logo.png")} alt="FarmQuest Logo" width={32} height={32} className="h-8 w-8" />
             <span className="text-2xl font-bold text-green-800">FarmQuest</span>
           </div>
           <Button
@@ -181,7 +182,7 @@ export function FarmLanding({ onGetStarted, onSignup, onLogin }: FarmLandingProp
             {/* Brand Section */}
             <div className="md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
-                <Image src="/farmquest-logo.png" alt="FarmQuest Logo" width={24} height={24} className="h-6 w-6" />
+                <Image src={getAsset("/farmquest-logo.png")} alt="FarmQuest Logo" width={24} height={24} className="h-6 w-6" />
                 <span className="text-xl font-bold">FarmQuest</span>
               </div>
               <p className="text-green-200 mb-4 max-w-md">

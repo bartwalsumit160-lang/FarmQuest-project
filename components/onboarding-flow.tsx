@@ -8,6 +8,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Progress } from "@/components/ui/progress"
 import { ChevronRight, ChevronLeft, User, BookOpen, Calendar, Palette, UserCheck } from "lucide-react"
 import { AnimatedAvatar } from "./animated-avatar"
+import { getAsset } from '@/lib/getAsset';
 
 interface OnboardingFlowProps {
   isOpen: boolean
@@ -484,7 +485,7 @@ export function OnboardingFlow({ isOpen, onComplete }: OnboardingFlowProps) {
       <Card className="w-full max-w-lg max-h-[90vh] overflow-y-auto">
         <CardHeader className="text-center pb-4">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <img src="/farmquest-logo.png" alt="FarmQuest" className="h-8 w-8" />
+            <img src={getAsset("/farmquest-logo.png")} alt="FarmQuest" className="h-8 w-8" />
             <span className="text-xl font-bold text-green-800">FarmQuest</span>
           </div>
           <CardTitle className="text-2xl text-green-900">Welcome to Your Farm!</CardTitle>
