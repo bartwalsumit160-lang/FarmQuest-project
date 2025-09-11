@@ -1,8 +1,11 @@
 {
-  "name": "my-v0-project",
+  "homepage": "https://TarunTalan.github.io/FarmQuest-project",
+  "name": "farm-quest",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
