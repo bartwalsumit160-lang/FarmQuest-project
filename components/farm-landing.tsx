@@ -44,20 +44,20 @@ export function FarmLanding({ onGetStarted, onSignup, onLogin }: FarmLandingProp
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-amber-50 relative">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 relative">
       <AnimatedBackground />
 
       {/* Header */}
-      <header className="border-b bg-white/80 backdrop-blur-sm relative z-10">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Image src={getAsset("/farmquest-logo.png")} alt="FarmQuest Logo" width={32} height={32} className="h-8 w-8" />
-            <span className="text-2xl font-bold text-green-800">FarmQuest</span>
+      <header className="border-b bg-white/90 backdrop-blur-md shadow-sm relative z-10">
+        <div className="container mx-auto px-4 py-5 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <Image src={getAsset("/farmquest-logo.png")} alt="Krishi Quest Logo" width={36} height={36} className="h-9 w-9" />
+            <span className="text-2xl font-bold bg-gradient-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent">Krishi Quest</span>
           </div>
           <Button
             onClick={() => setShowAuthModal(true)}
             variant="outline"
-            className="border-green-700 text-green-700 hover:bg-green-700 hover:text-white bg-white"
+            className="border-teal-600 text-teal-700 hover:bg-teal-600 hover:text-white bg-white font-semibold shadow-md hover:shadow-lg transition-all"
           >
             Sign In
           </Button>
@@ -65,62 +65,62 @@ export function FarmLanding({ onGetStarted, onSignup, onLogin }: FarmLandingProp
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-16 text-center relative z-10">
-        <Badge className="mb-6 bg-green-100 text-green-800 hover:bg-green-100">🌱 Sustainable Farming Made Fun</Badge>
-        <h1 className="text-5xl font-bold text-green-900 mb-6 text-balance">
-          Level Up Your Farm with
-          <span className="text-green-600"> Sustainable Practices</span>
+      <section className="container mx-auto px-4 py-20 text-center relative z-10">
+        <Badge className="mb-6 bg-teal-100 text-teal-800 hover:bg-teal-100 px-4 py-2 text-base">🌾 सतत कृषि को बनाएं मजेदार</Badge>
+        <h1 className="text-6xl font-bold text-slate-900 mb-6 text-balance leading-tight">
+          Transform Your Farming Journey with
+          <span className="block mt-2 bg-gradient-to-r from-teal-600 via-emerald-600 to-cyan-600 bg-clip-text text-transparent"> Krishi Quest</span>
         </h1>
-        <p className="text-xl text-green-700 mb-8 max-w-2xl mx-auto text-pretty">
-          Join thousands of farmers building better habits, earning rewards, and creating a more sustainable future
-          through gamified farming practices.
+        <p className="text-xl text-slate-700 mb-10 max-w-3xl mx-auto text-pretty leading-relaxed">
+          Join a vibrant community of farmers revolutionizing agriculture through gamified sustainable practices, interactive learning, and meaningful rewards.
         </p>
         <Button
           onClick={() => setShowAuthModal(true)}
           size="lg"
-          className="bg-green-700 hover:bg-green-800 text-white px-8 py-3 text-lg shadow-lg"
+          className="bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all font-semibold rounded-xl"
         >
-          Start Your Farm Journey
-          <ArrowRight className="ml-2 h-5 w-5" />
+          शुरू करें अपना कृषि सफर
+          <ArrowRight className="ml-2 h-6 w-6" />
         </Button>
       </section>
 
       {/* Features Grid */}
-      <section className="container mx-auto px-4 py-16 relative z-10">
-        <h2 className="text-3xl font-bold text-center text-green-900 mb-12">Why Farmers Choose FarmQuest</h2>
+      <section className="container mx-auto px-4 py-20 relative z-10">
+        <h2 className="text-4xl font-bold text-center text-slate-900 mb-4">Why Farmers Trust Krishi Quest</h2>
+        <p className="text-center text-slate-600 mb-12 text-lg">Empowering agriculture through innovation and community</p>
         <div className="grid md:grid-cols-3 gap-8">
-          <Card className="border-green-200 hover:shadow-lg transition-shadow">
-            <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Trophy className="h-8 w-8 text-green-600" />
+          <Card className="border-teal-200 hover:shadow-2xl transition-all hover:scale-105 bg-white/80 backdrop-blur">
+            <CardContent className="p-8 text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-teal-100 to-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-md">
+                <Trophy className="h-10 w-10 text-teal-600" />
               </div>
-              <h3 className="text-xl font-semibold text-green-900 mb-3">Earn Rewards</h3>
-              <p className="text-green-700">
-                Complete sustainable farming tasks to earn XP, unlock achievements, and level up your farming expertise.
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Earn & Grow</h3>
+              <p className="text-slate-700 leading-relaxed">
+                Complete farming challenges to earn credits, unlock badges, and climb the leaderboard while mastering sustainable techniques.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-green-200 hover:shadow-lg transition-shadow">
-            <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Target className="h-8 w-8 text-amber-600" />
+          <Card className="border-teal-200 hover:shadow-2xl transition-all hover:scale-105 bg-white/80 backdrop-blur">
+            <CardContent className="p-8 text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-cyan-100 to-teal-100 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-md">
+                <Target className="h-10 w-10 text-cyan-600" />
               </div>
-              <h3 className="text-xl font-semibold text-green-900 mb-3">Build Habits</h3>
-              <p className="text-green-700">
-                Track daily sustainable practices like water conservation, soil health checks, and organic methods.
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Track Progress</h3>
+              <p className="text-slate-700 leading-relaxed">
+                Monitor daily agricultural practices including water management, soil testing, and organic farming methods with smart analytics.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-green-200 hover:shadow-lg transition-shadow">
-            <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-blue-600" />
+          <Card className="border-teal-200 hover:shadow-2xl transition-all hover:scale-105 bg-white/80 backdrop-blur">
+            <CardContent className="p-8 text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-emerald-100 to-teal-100 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-md">
+                <Users className="h-10 w-10 text-emerald-600" />
               </div>
-              <h3 className="text-xl font-semibold text-green-900 mb-3">Join Community</h3>
-              <p className="text-green-700">
-                Connect with fellow farmers, share tips, and participate in seasonal challenges together.
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Connect & Learn</h3>
+              <p className="text-slate-700 leading-relaxed">
+                Network with farmers nationwide, exchange knowledge, participate in challenges, and grow together as a community.
               </p>
             </CardContent>
           </Card>
@@ -128,29 +128,30 @@ export function FarmLanding({ onGetStarted, onSignup, onLogin }: FarmLandingProp
       </section>
 
       {/* Sustainable Practices Preview */}
-      <section className="bg-white py-16 relative z-10">
+      <section className="bg-gradient-to-br from-white to-teal-50/30 py-20 relative z-10">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-green-900 mb-12">Sustainable Practices You'll Master</h2>
+          <h2 className="text-4xl font-bold text-center text-slate-900 mb-4">Master Sustainable Agricultural Practices</h2>
+          <p className="text-center text-slate-600 mb-12 text-lg">Learn cutting-edge techniques for modern farming</p>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="flex items-center gap-4 p-4 rounded-lg bg-green-50">
-              <Droplets className="h-8 w-8 text-blue-600" />
+            <div className="flex items-center gap-4 p-6 rounded-xl bg-gradient-to-r from-cyan-50 to-blue-50 shadow-md hover:shadow-lg transition-all">
+              <Droplets className="h-10 w-10 text-cyan-600" />
               <div>
-                <h4 className="font-semibold text-green-900">Water Conservation</h4>
-                <p className="text-sm text-green-700">Efficient irrigation and rainwater harvesting</p>
+                <h4 className="font-semibold text-slate-900 text-lg">जल संरक्षण</h4>
+                <p className="text-sm text-slate-600">Drip irrigation, rainwater harvesting & smart water management</p>
               </div>
             </div>
-            <div className="flex items-center gap-4 p-4 rounded-lg bg-amber-50">
-              <Sun className="h-8 w-8 text-amber-600" />
+            <div className="flex items-center gap-4 p-6 rounded-xl bg-gradient-to-r from-amber-50 to-orange-50 shadow-md hover:shadow-lg transition-all">
+              <Sun className="h-10 w-10 text-amber-600" />
               <div>
-                <h4 className="font-semibold text-green-900">Soil Health</h4>
-                <p className="text-sm text-green-700">Composting and organic matter management</p>
+                <h4 className="font-semibold text-slate-900 text-lg">मृदा स्वास्थ्य</h4>
+                <p className="text-sm text-slate-600">Organic composting, soil testing & nutrient management</p>
               </div>
             </div>
-            <div className="flex items-center gap-4 p-4 rounded-lg bg-green-50">
-              <Leaf className="h-8 w-8 text-green-600" />
+            <div className="flex items-center gap-4 p-6 rounded-xl bg-gradient-to-r from-emerald-50 to-teal-50 shadow-md hover:shadow-lg transition-all">
+              <Leaf className="h-10 w-10 text-emerald-600" />
               <div>
-                <h4 className="font-semibold text-green-900">Crop Rotation</h4>
-                <p className="text-sm text-green-700">Sustainable planting and biodiversity</p>
+                <h4 className="font-semibold text-slate-900 text-lg">फसल चक्रण</h4>
+                <p className="text-sm text-slate-600">Crop rotation planning & biodiversity enhancement</p>
               </div>
             </div>
           </div>
@@ -158,45 +159,44 @@ export function FarmLanding({ onGetStarted, onSignup, onLogin }: FarmLandingProp
       </section>
 
       {/* CTA Section */}
-      <section className="bg-green-600 py-16 relative z-10">
+      <section className="bg-gradient-to-r from-teal-600 via-emerald-600 to-cyan-600 py-20 relative z-10">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Ready to Transform Your Farm?</h2>
-          <p className="text-green-100 mb-8 text-lg">
-            Join the sustainable farming revolution and start earning rewards today.
+          <h2 className="text-4xl font-bold text-white mb-4">Ready to Revolutionize Your Farming?</h2>
+          <p className="text-teal-50 mb-10 text-xl max-w-2xl mx-auto">
+            Join thousands of progressive farmers embracing sustainable agriculture and earning rewards.
           </p>
           <Button
             onClick={() => setShowAuthModal(true)}
             size="lg"
             variant="secondary"
-            className="bg-white text-green-700 hover:bg-green-50 hover:text-green-800 px-8 py-3 text-lg shadow-lg"
+            className="bg-white text-teal-700 hover:bg-teal-50 hover:text-teal-800 px-10 py-6 text-lg shadow-2xl font-semibold rounded-xl hover:scale-105 transition-all"
           >
-            Get Started Now
-            <ArrowRight className="ml-2 h-5 w-5" />
+            अभी शुरू करें
+            <ArrowRight className="ml-2 h-6 w-6" />
           </Button>
         </div>
       </section>
 
-      <footer className="bg-green-900 text-green-100 py-12 relative z-10">
+      <footer className="bg-slate-900 text-slate-100 py-12 relative z-10">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             {/* Brand Section */}
             <div className="md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
-                <Image src={getAsset("/farmquest-logo.png")} alt="FarmQuest Logo" width={24} height={24} className="h-6 w-6" />
-                <span className="text-xl font-bold">FarmQuest</span>
+                <Image src={getAsset("/farmquest-logo.png")} alt="Krishi Quest Logo" width={24} height={24} className="h-6 w-6" />
+                <span className="text-xl font-bold bg-gradient-to-r from-teal-400 to-emerald-400 bg-clip-text text-transparent">Krishi Quest</span>
               </div>
-              <p className="text-green-200 mb-4 max-w-md">
-                Empowering farmers worldwide to build sustainable practices through gamification. Join our community and
-                make farming fun while protecting our planet.
+              <p className="text-slate-300 mb-4 max-w-md">
+                Empowering Indian farmers with cutting-edge sustainable practices through gamification, community learning, and innovative rewards. Transform agriculture, one quest at a time.
               </p>
               <div className="flex gap-4">
-                <Button variant="ghost" size="sm" className="text-green-200 hover:text-white hover:bg-green-800">
+                <Button variant="ghost" size="sm" className="text-slate-300 hover:text-white hover:bg-teal-700 transition-all">
                   <Facebook className="h-4 w-4" />
                 </Button>
-                <Button variant="ghost" size="sm" className="text-green-200 hover:text-white hover:bg-green-800">
+                <Button variant="ghost" size="sm" className="text-slate-300 hover:text-white hover:bg-teal-700 transition-all">
                   <Twitter className="h-4 w-4" />
                 </Button>
-                <Button variant="ghost" size="sm" className="text-green-200 hover:text-white hover:bg-green-800">
+                <Button variant="ghost" size="sm" className="text-slate-300 hover:text-white hover:bg-teal-700 transition-all">
                   <Instagram className="h-4 w-4" />
                 </Button>
               </div>
@@ -205,30 +205,30 @@ export function FarmLanding({ onGetStarted, onSignup, onLogin }: FarmLandingProp
             {/* Quick Links */}
             <div>
               <h4 className="font-semibold text-white mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-green-200">
+              <ul className="space-y-2 text-slate-300">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    About Us
+                  <a href="#" className="hover:text-teal-400 transition-colors">
+                    About Krishi Quest
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="#" className="hover:text-teal-400 transition-colors">
                     How It Works
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Success Stories
+                  <a href="#" className="hover:text-teal-400 transition-colors">
+                    Farmer Success Stories
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Community
+                  <a href="#" className="hover:text-teal-400 transition-colors">
+                    Community Forum
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Blog
+                  <a href="#" className="hover:text-teal-400 transition-colors">
+                    Agricultural Blog
                   </a>
                 </li>
               </ul>
@@ -237,34 +237,34 @@ export function FarmLanding({ onGetStarted, onSignup, onLogin }: FarmLandingProp
             {/* Contact Info */}
             <div>
               <h4 className="font-semibold text-white mb-4">Contact</h4>
-              <div className="space-y-3 text-green-200">
+              <div className="space-y-3 text-slate-300">
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
-                  <span className="text-sm">hello@farmquest.com</span>
+                  <span className="text-sm">support@krishiquest.in</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
-                  <span className="text-sm">+1 (555) 123-4567</span>
+                  <span className="text-sm">+91 98765 43210</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="h-4 w-4" />
-                  <span className="text-sm">San Francisco, CA</span>
+                  <span className="text-sm">New Delhi, India</span>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Bottom Bar */}
-          <div className="border-t border-green-800 pt-6 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-green-200">© 2024 FarmQuest. All rights reserved.</p>
-            <div className="flex gap-6 text-sm text-green-200 mt-4 md:mt-0">
-              <a href="#" className="hover:text-white transition-colors">
+          <div className="border-t border-slate-700 pt-6 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-sm text-slate-300">© 2025 Krishi Quest. All rights reserved.</p>
+            <div className="flex gap-6 text-sm text-slate-300 mt-4 md:mt-0">
+              <a href="#" className="hover:text-teal-400 transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="#" className="hover:text-teal-400 transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="#" className="hover:text-teal-400 transition-colors">
                 Cookie Policy
               </a>
             </div>
