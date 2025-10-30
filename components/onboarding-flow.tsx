@@ -485,10 +485,10 @@ export function OnboardingFlow({ isOpen, onComplete }: OnboardingFlowProps) {
       <Card className="w-full max-w-lg max-h-[90vh] overflow-y-auto">
         <CardHeader className="text-center pb-4">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <img src={getAsset("/farmquest-logo.png")} alt="FarmQuest" className="h-8 w-8" />
-            <span className="text-xl font-bold text-green-800">FarmQuest</span>
+            <img src={getAsset("/farmquest-logo.png")} alt="Krishi Quest" className="h-8 w-8" />
+            <span className="text-xl font-bold bg-gradient-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent">Krishi Quest</span>
           </div>
-          <CardTitle className="text-2xl text-green-900">Welcome to Your Farm!</CardTitle>
+          <CardTitle className="text-2xl text-slate-900">Welcome to Your Farming Journey!</CardTitle>
           <div className="mt-4">
             <Progress value={progress} className="h-2" />
             <p className="text-sm text-green-600 mt-2">
