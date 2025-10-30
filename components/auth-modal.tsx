@@ -52,10 +52,10 @@ export function AuthModal({ isOpen, onClose, onLogin, onSignup }: AuthModalProps
 
         <CardHeader className="text-center pb-4">
           <div className="flex items-center justify-center gap-2 mb-2">
-            <Sprout className="h-6 w-6 text-teal-600" />
-            <span className="text-xl font-bold bg-gradient-to-r from-teal-700 to-emerald-700 bg-clip-text text-transparent">Krishi Quest</span>
+            <Sprout className="h-6 w-6 text-green-600" />
+            <span className="text-xl font-bold text-green-800">FarmQuest</span>
           </div>
-          <CardTitle className="text-2xl text-slate-900">{isSignUp ? "Join Krishi Quest" : "Welcome Back Farmer"}</CardTitle>
+          <CardTitle className="text-2xl text-green-900">{isSignUp ? "Join FarmQuest" : "Welcome Back"}</CardTitle>
         </CardHeader>
 
         <CardContent>
@@ -140,7 +140,7 @@ export function AuthModal({ isOpen, onClose, onLogin, onSignup }: AuthModalProps
               </div>
             </div>
 
-            <Button type="submit" className="w-full bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white font-semibold shadow-lg">
+            <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 text-white">
               {isSignUp ? "Create Account" : "Sign In"}
             </Button>
           </form>

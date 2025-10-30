@@ -1,7 +1,7 @@
 {
-  "homepage": "https://yourusername.github.io/krishi-quest",
-  "name": "krishi-quest",
-  "version": "1.0.0",
+  "homepage": "https://TarunTalan.github.io/FarmQuest-project",
+  "name": "farm-quest",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",

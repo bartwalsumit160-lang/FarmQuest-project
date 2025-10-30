@@ -5,8 +5,8 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Krishi Quest - Empowering Indian Farmers',
-  description: 'A revolutionary gamified platform empowering farmers with sustainable agricultural practices through interactive learning, community support, and rewards.',
+  title: 'Farm Quest',
+  description: 'It is a gamified platform for farmers to promote and adopt sustainable farming practices.',
 }
 
 export default function RootLayout({
