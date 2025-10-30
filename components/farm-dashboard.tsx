@@ -305,11 +305,11 @@ export function FarmDashboard({ userProfile }: FarmDashboardProps) {
             <div className="flex items-center gap-4">
               <img
                 src={getAsset("/farmquest-logo.png")}
-                alt="FarmQuest Logo"
+                alt="Krishi Quest Logo"
                 className="w-10 h-10 object-contain"
               />
-              <span className="text-2xl font-bold text-primary" style={{ marginRight: "2rem" }}>
-                FarmQuest
+              <span className="text-2xl font-bold bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent" style={{ marginRight: "2rem" }}>
+                Krishi Quest
               </span>
               {/* Inventory and Shop tabs */}
               <Button
@@ -424,8 +424,8 @@ export function FarmDashboard({ userProfile }: FarmDashboardProps) {
             ) : selectedTab === "habits" ? (
               <div>
                 <div className="mb-8">
-                  <h1 className="text-3xl font-bold text-foreground mb-2">My Farming Habits 🌱</h1>
-                  <p className="text-muted-foreground">Track and manage your sustainable farming practices</p>
+                  <h1 className="text-3xl font-bold text-foreground mb-2">मेरी कृषि आदतें 🌱</h1>
+                  <p className="text-muted-foreground">Track and manage your sustainable farming practices daily</p>
                 </div>
                 <HabitManagement
                   habits={habits}
@@ -450,8 +450,8 @@ export function FarmDashboard({ userProfile }: FarmDashboardProps) {
             ) : selectedTab === "achievements" ? (
               <div>
                 <div className="mb-8">
-                  <h1 className="text-3xl font-bold text-foreground mb-2">Achievements & Contributions 🏆</h1>
-                  <p className="text-muted-foreground">Track your farming milestones and environmental impact</p>
+                  <h1 className="text-3xl font-bold text-foreground mb-2">उपलब्धियां एवं योगदान 🏆</h1>
+                  <p className="text-muted-foreground">Track your farming milestones and environmental contributions</p>
                 </div>
 
                 {/* Recent Achievements */}
@@ -672,10 +672,10 @@ export function FarmDashboard({ userProfile }: FarmDashboardProps) {
                   <div className="flex items-center justify-between mb-4">
                     <div>
                       <h1 className="text-3xl font-bold text-foreground mb-2">
-                        {formatGreeting(currentDateTime)}, {getUserFirstName()}! 🌱
+                        {formatGreeting(currentDateTime)}, {getUserFirstName()}! 🌾
                       </h1>
                       <p className="text-muted-foreground">
-                        {formatDateTime(currentDateTime)} - Let's grow sustainably today
+                        {formatDateTime(currentDateTime)} - आइए आज सतत खेती करें
                       </p>
                     </div>
                   </div>
@@ -898,11 +898,11 @@ export function FarmDashboard({ userProfile }: FarmDashboardProps) {
           <div className="flex items-center gap-3 mb-2 md:mb-0">
             <img
               src={getAsset("/farmquest-logo.png")}
-              alt="FarmQuest Logo"
+              alt="Krishi Quest Logo"
               className="w-8 h-8 object-contain"
             />
             <span className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} FarmQuest. All rights reserved.
+              © {new Date().getFullYear()} Krishi Quest. All rights reserved.
             </span>
           </div>
           <div className="flex gap-4">

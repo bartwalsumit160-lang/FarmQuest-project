@@ -48,9 +48,9 @@ export function SettingsSystem({ userProfile, userCredits, onCreditsChange, onLo
   const [selectedLanguage, setSelectedLanguage] = useState("en")
   const [profileData, setProfileData] = useState({
     fullName: "John Doe",
-    email: "john.doe@farmquest.com",
-    phone: "+1 (555) 123-4567",
-    location: "California, USA",
+    email: "john.doe@krishiquest.in",
+    phone: "+91 98765 43210",
+    location: "Punjab, India",
     farmSize: "50 acres",
     farmType: "Organic Vegetables",
     yearsExperience: userProfile?.farmingExperience || "5-10 years",
@@ -83,7 +83,7 @@ export function SettingsSystem({ userProfile, userCredits, onCreditsChange, onLo
     {
       question: "What are the different farming levels?",
       answer:
-        "FarmQuest has 20 levels: Seedling (1-2), Sprout (3-4), Sapling (5-6), Young Plant (7-8), Mature Plant (9-10), Expert Grower (11-12), Master Farmer (13-14), Sustainable Steward (15-16), Eco Champion (17-18), and Green Guardian (19-20).",
+        "Krishi Quest has 20 progressive levels: Seedling (1-2), Sprout (3-4), Sapling (5-6), Young Plant (7-8), Mature Plant (9-10), Expert Grower (11-12), Master Farmer (13-14), Sustainable Steward (15-16), Eco Champion (17-18), and Green Guardian (19-20).",
     },
     {
       question: "How do challenges work?",
@@ -446,7 +446,7 @@ export function SettingsSystem({ userProfile, userCredits, onCreditsChange, onLo
                       <h3 className="font-medium">Getting Started Guide</h3>
                     </div>
                     <p className="text-sm text-muted-foreground mb-3">
-                      Learn the basics of FarmQuest and start your sustainable farming journey.
+                      Learn the basics of Krishi Quest and begin your sustainable farming journey.
                     </p>
                     <Button variant="outline" size="sm">
                       View Guide
